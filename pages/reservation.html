@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cat Cafe</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon_new.svg">
+        <link href="../css/output.css" rel="stylesheet">
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/8e27b1e43f.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-salmon-pink mx-auto min-h-screen">
+        <nav class="bg-linear-to-r from-green-grad-start to-green-grad-end flex items-center justify-between mx-auto py-2 px-12 md:p-4 md:gap-8">
+            <a href="/final-project/index.html">
+                <img class="w-24" src="../images/logo_new.svg"/>
+            </a>
+            <div class="dropdown-menu absolute z-50 -top-full left-0 bg-linear-to-r from-green-grad-start to-green-grad-end w-full flex flex-col gap-6 items-center py-2 
+                md:static md:z-auto md:inline-flex md:flex-row md:justify-between">
+                <ul class="flex flex-col font-cascadia items-center gap-6 md:flex-row md:gap-8">
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/index.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-house mr-2"></i>Home
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/menu.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-book-open mr-2"></i>Menu
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/cats.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-cat mr-2"></i>Cats
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/contact.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-phone mr-2"></i>Contact Us
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="font-cascadia inline-flex justify-self-center self-center">
+                    <a href="/final-project/pages/reservation.html" class="bg-dark-green text-white cursor-pointer rounded px-3 py-2 hover:bg-hover-dark-green active:bg-active-dark-green whitespace-nowrap"><i class="fa-regular fa-calendar mr-2"></i>Reservations</a>
+                </div>
+            </div>
+
+            <div class="toggle-button cursor-pointer md:hidden">
+                <i id="menuIcon" class="fa-solid fa-bars fa-lg"></i>
+            </div>
+        </nav>
+        
+        <div style="background-image: url('../images/pexels-pixabay-416160.jpg');" class="bg-cover bg-fixed bg-center min-h-screen py-12">
+            <div class="mx-6 p-6 md:mx-24 xl:mx-auto md:p-12 bg-light-green/80 lg:max-w-7xl">
+                <div class="text-center">
+                    <h1 class="font-cascadia mb-6 text-2xl font-semibold text-dark-green">Make a reservation</h1>
+                </div>
+                
+                <div class="font-lato text-dark-green mb-2">
+                    Here you can make a reservation to visit our cafe. Please, select the date and time for your visit and fill out the form with your contact information and the size of your party.
+                    For parties larger than 4 people, please <a href="/final-project/pages/contact.html" class="font-semibold hover:underline">contact us</a> via phone or email.
+                </div>
+                <form class="md:grid md:grid-cols-2 md:gap-12">
+
+                    <div class="p-4 pt-0">
+                        <div inline-datepicker class="font-lato mx-auto sm:mx-0 flex justify-center my-5 text-dark-green 
+                            [&>div>div]:shadow-none 
+                            [&>div>div]:bg-light-green/80 
+                            [&_div>button]:bg-light-green/80 [&_div>button]:text-dark-green 
+                            [&_div>button]:hover:bg-dark-green/80 [&_div>button]:hover:text-white 
+                            [&_div>span]:text-dark-green 
+                            [&_div>span.selected]:bg-dark-green [&_div>span.selected]:text-white [&_div>span.selected]:font-medium"></div>
+                        <label class="font-cascadia text-sm font-medium text-dark-green mb-2 block">
+                            Pick your time
+                        </label>
+                        <ul id="timetable" class="font-lato grid w-full grid-cols-3 gap-2 mb-5">
+                            <li>
+                                <input type="radio" id="10-am" value="" class="hidden peer" name="timetable">
+                                <label for="10-am"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                10:00 AM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="10-30-am" value="" class="hidden peer" name="timetable">
+                                <label for="10-30-am"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                10:30 AM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="11-am" value="" class="hidden peer" name="timetable">
+                                <label for="11-am"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                11:00 AM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="11-30-am" value="" class="hidden peer" name="timetable">
+                                <label for="11-30-am"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                11:30 AM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="12-am" value="" class="hidden peer" name="timetable" checked>
+                                <label for="12-am"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                12:00 AM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="12-30-pm" value="" class="hidden peer" name="timetable">
+                                <label for="12-30-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                12:30 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="1-pm" value="" class="hidden peer" name="timetable">
+                                <label for="1-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                01:00 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="1-30-pm" value="" class="hidden peer" name="timetable">
+                                <label for="1-30-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                01:30 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="2-pm" value="" class="hidden peer" name="timetable">
+                                <label for="2-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                02:00 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="2-30-pm" value="" class="hidden peer" name="timetable">
+                                <label for="2-30-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                02:30 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="3-pm" value="" class="hidden peer" name="timetable">
+                                <label for="3-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                03:00 PM
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="3-30-pm" value="" class="hidden peer" name="timetable">
+                                <label for="3-30-pm"
+                                class="inline-flex items-center justify-center w-full px-2 py-1 text-sm font-medium text-center hover:text-gray-900 bg-light-green/80 border rounded-lg cursor-pointer text-dark-green border-dark-green peer-checked:border-dark-green peer-checked:bg-dark-green peer-checked:text-white hover:bg-gray-50">
+                                03:30 PM
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="font-lato">
+                        <label class="text-dark-green" for="name">Name</label>
+                        <input class="bg-light-green/80 border border-dark-green/60 text-dark-green text-sm placeholder:text-dark-green/60 rounded-lg block w-full p-1.5 mb-1 focus:ring-dark-green/60 focus:ring-2" type="text" id="name" placeholder="Name">
+
+                        <label class="text-dark-green" for="email">Email</label>
+                        <input class="bg-light-green/80 border border-dark-green/60 text-dark-green text-sm placeholder:text-dark-green/60 rounded-lg block w-full p-1.5 mb-1 focus:ring-dark-green/60 focus:ring-2" type="email" id="email" placeholder="example@catcafe.com">
+
+                        <label class="text-dark-green" for="phone">Phone</label>
+                        <input class="bg-light-green/80 border border-dark-green/60 text-dark-green text-sm placeholder:text-dark-green/60 rounded-lg block w-full p-1.5 mb-1 focus:ring-dark-green/60 focus:ring-2" type="text" id="phone" placeholder="Phone">
+                        
+                        <form class="max-w-sm mx-auto">
+                            <label class="text-dark-green" for="party">Number of guests</label>
+                            <select id="party" class="bg-light-green/80 border border-dark-green/60 text-dark-green text-sm rounded-lg focus:ring-light-green focus:border-dark-green block w-full p-2.5 mb-1">
+                                <option selected>Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </form>
+
+                        <label class="text-dark-green" for="addinfo">Additional information</label>
+                        <textarea class="bg-light-green/80 border border-dark-green/60 text-gray-900 text-sm placeholder:text-dark-green/60 rounded-lg block w-full p-1.5 focus:ring-dark-green/60 focus:ring-2" type="text" id="addinfo" placeholder="Additional information"></textarea>
+    
+                        <button class="bg-dark-green hover:bg-hover-dark-green text-white my-4 py-2 px-4 rounded" type="submit" onclick="alert('Thank you for your reservation!')">
+                            Make a reservation
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer class="footer footer-horizontal bg-peach p-4">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6">
+                <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 [&>div>h5]:font-cascadia [&>div>p]:font-lato">
+                    <div>
+                        <h5 class="text-sm font-semibold">Follow us</h5>
+                        <div>
+                            <a href="#"><i class="fa-brands fa-instagram mr-1"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f mr-1"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>                       
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Visit us</h5>
+                        <p>Rantakatu 5, 90100 Oulu</p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Contact us</h5>
+                        <p><a href="tel:+358401234567" class="hover:underline">+358 40 123 4567</a></p>
+                        <p><a href="mailto:info@catcafe.com" class="hover:underline">info@catcafe.com</a></p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Opening hours</h5>
+                        <p>Mon - Fri 10-17</p>
+                        <p>Sat - Sun 10-15</p>
+                        <p class="text-sm">(Reservation required)</p>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>

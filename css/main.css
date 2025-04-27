@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+    /* Custom colors */
+    --color-green-grad-start: rgb(251, 251, 244);
+    --color-green-grad-end: rgb(246, 244, 210);
+    --color-dark-green: rgb(63, 71, 57);
+    --color-hover-dark-green: rgb(44, 51, 39);
+    --color-active-dark-green: rgb(41, 48, 35);
+    --color-salmon-pink: rgb(249, 217, 201);
+    --color-light-green: rgb(186, 203, 169);
+    --color-peach: rgb(241, 191, 152);
+
+    /* Custom fonts*/
+    --font-cascadia: "Cascadia", "serif";
+    --font-lato: "Lato", "sans-serif";
+}
+
+@font-face {
+    font-family: Cascadia;
+    src: url("../fonts/cascadia/CascadiaMono-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/lato/Lato-Regular.ttf");
+}
