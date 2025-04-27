@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cat Cafe</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon_new.svg">
+        <link href="./css/output.css" rel="stylesheet">
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/8e27b1e43f.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-salmon-pink mx-auto min-h-screen">
+        <nav class="bg-linear-to-r from-green-grad-start to-green-grad-end flex items-center justify-between py-2 px-12 md:p-4 md:gap-8">
+            <a href="/final-project/index.html">
+                <img class="w-24" src="./images/logo_new.svg"/>
+            </a>
+            <div class="dropdown-menu absolute z-50 -top-full left-0 bg-linear-to-r from-green-grad-start to-green-grad-end w-full flex flex-col gap-6 items-center py-2 md:static md:z-auto md:inline-flex md:flex-row md:justify-between">
+                <ul class="flex flex-col font-cascadia items-center gap-6 md:flex-row md:gap-8">
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/index.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-house mr-2"></i>Home
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/menu.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-book-open mr-2"></i>Menu
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/cats.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-cat mr-2"></i>Cats
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                    <li class="whitespace-nowrap">
+                        <a href="/final-project/pages/contact.html" class="group text-dark-green transition duration-300">
+                            <i class="fa-solid fa-phone mr-2"></i>Contact Us
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-dark-green"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="font-cascadia inline-flex justify-self-center self-center">
+                    <a href="/final-project/pages/reservation.html" class="bg-dark-green text-white cursor-pointer rounded px-3 py-2 hover:bg-hover-dark-green active:bg-active-dark-green whitespace-nowrap"><i class="fa-regular fa-calendar mr-2"></i>Reservations</a>
+                </div>
+            </div>
+
+            <div class="toggle-button cursor-pointer md:hidden">
+                <i id="menuIcon" class="fa-solid fa-bars fa-lg"></i>
+            </div>
+        </nav> 
+        
+        <!-- https://www.pexels.com/photo/close-up-photo-of-cute-sleeping-cat-416160/ -->
+        <div style="background-image: url('./images/pexels-pixabay-416160.jpg');" class="bg-cover bg-center min-h-screen py-12">
+            <div class="mx-6 p-6 md:mx-24 xl:mx-auto md:p-12 bg-light-green/80 lg:max-w-7xl">
+                <div class="text-center">
+                    <h1 class="font-cascadia mb-6 text-2xl font-semibold text-dark-green">Welcome to Cat Cafe!</h1>
+                </div>
+
+                <div class="mb-2 max-w-screen-xl mx-auto">
+                    <img src="./images/pexels-jeff-vinluan-20921030-8640437.jpg" class="rounded-lg" alt="cat on a cafe window" />
+                </div>
+                
+                <div class="font-lato text-dark-green [&>a]:font-semibold [&>a]:hover:underline">
+                    We are a small cat cafe located in Oulu city center.
+                    We offer a variety of delicious pastries, hot and cold drinks,
+                    and of course cute fluffy cats!
+                    <br><br>
+                    On our page you can browse our <a href="/final-project/pages/menu.html">menu</a>, make a seat <a href="/final-project/pages/reservation.html">reservation</a>,
+                    get to know our lovely <a href="/final-project/pages/cats.html">cats</a> or <a href="/final-project/pages/contact.html">contact us</a> on whatever is on your mind.
+                    <br><br>
+                    We hope to see you soon!
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer footer-horizontal bg-peach p-4">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6">
+                <div class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 [&>div>h5]:font-cascadia [&>div>p]:font-lato">
+                    <div>
+                        <h5 class="text-sm font-semibold">Follow us</h5>
+                        <div>
+                            <a href="#"><i class="fa-brands fa-instagram mr-1"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f mr-1"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>                        
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Visit us</h5>
+                        <p>Rantakatu 5, 90100 Oulu</p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Contact us</h5>
+                        <p><a href="tel:+358401234567" class="hover:underline">+358 40 123 4567</a></p>
+                        <p><a href="mailto:info@catcafe.com" class="hover:underline">info@catcafe.com</a></p>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-semibold">Opening hours</h5>
+                        <p>Mon - Fri 10-17</p>
+                        <p>Sat - Sun 10-15</p>
+                        <p class="text-sm">(Reservation required)</p>
+                    </div>
+                </div>
+            </div>            
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
