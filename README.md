@@ -1,5 +1,7 @@
 # Cat Cafe
 
+![Cat Cafe logo](./images/logo_new.svg)
+
 This website has been developed as a final project for JAMK's Web visualization course.
 
 [Website](https://cat-cafe-alpha.vercel.app/)
