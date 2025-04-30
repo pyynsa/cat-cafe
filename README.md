@@ -2,7 +2,7 @@
 
 This website has been developed as a final project for JAMK's Web visualization course.
 
-<a href="https://cat-cafe-alpha.vercel.app/" target="_blank">Website</a>
+[Website](https://cat-cafe-alpha.vercel.app/)
 
 [Presentation (in Finnish)](https://youtu.be/b6thrZ1Lq0Q) on YouTube
 
