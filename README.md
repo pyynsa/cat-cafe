@@ -27,6 +27,8 @@ I plan to develop this site further, and you can read about my development ideas
 
 ## Technology choices
 
+![TailwindCSS logo](https://tailwindcss.com/_next/static/media/tailwindcss-logotype.a1069bda.svg)
+
 The site has been developed using TailwindCSS and Flowbite. A little bit of JavaScript has been used to make the navigation bar responsive. I chose to use Tailwind, because it was new to me and I wanted to try it out. Flowbite offers some nice free components for Tailwind.
 
 ## Planning and designing visuals
