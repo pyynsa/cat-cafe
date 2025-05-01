@@ -6,7 +6,7 @@ This website has been developed as a final project for JAMK's Web visualization 
 
 [Website](https://cat-cafe-alpha.vercel.app/)
 
-[Presentation (in Finnish)](https://youtu.be/b6thrZ1Lq0Q) on YouTube
+[Presentation (in Finnish)](https://youtu.be/b6thrZ1Lq0Q) on YouTube.
 
 ## Summary
 
