@@ -48,8 +48,6 @@ I did my best to implement the chosen color palette throughout the used componen
 ## Further development
 My ideas for further development are:
 
-- [ ] Performance improvements
-    - Biggest thing to improve performance is to change the image formats and sizes
 - [ ] Slide down hamburger menu in mobile view
     - Probably the whole navigation bar needs to be reworked to implement this
 - [ ] Modals instead of alerts
@@ -58,3 +56,14 @@ My ideas for further development are:
     - Small fun introductions of the cats that change when the carousel is being browsed
 - [ ] Smooth appearance (fade in) of images
     - I'd like to try and see if I like this effect
+
+### Updates
+
+**1.5.2025**
+
+Tried improving the performance by changing the image formats from .jpg to .webp. I also added width limits to most of the images. However, these actions did not do anything to the performance points. The Google PageSpeed doesn't recognize width/height limits set in Tailwind's classes as image limits (unsurprisingly).
+
+```md
+- [x] Performance improvements
+    - Biggest thing to improve performance is to change the image formats and sizes
+```
