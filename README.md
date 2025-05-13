@@ -37,6 +37,9 @@ The site has been developed using TailwindCSS and Flowbite. A little bit of Java
 
 I designed the site's UI in [Figma](https://www.figma.com/) and planned a suitable color palette with [Coolors](https://coolors.co/).
 
+- Check out the [design](https://www.figma.com/design/3UOgESpUChZTmeKVBK5aVh/Cat-Cafe?node-id=0-1&t=PInld7ZbnHvdE642-1)
+- or the [mobile view prototype](https://www.figma.com/proto/3UOgESpUChZTmeKVBK5aVh/Cat-Cafe?node-id=0-1&t=PInld7ZbnHvdE642-1)
+
 The logo, that is also used as a favicon, I made with [Inkscape](https://inkscape.org/).
 
 Photos used on the site are from [Pexels](https://www.pexels.com/) and the pawprint used on Menu is from [SVGRepo](https://www.svgrepo.com/).
